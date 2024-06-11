@@ -2,7 +2,7 @@ version: '3'
 
 services:
   node0:
-    container_name: b2-node0
+    container_name: abe-node0
     image: ${ETHERMINT_IMAGE}
     ports:
       - "26656-26657:26656-26657"
@@ -72,4 +72,4 @@ networks:
       driver: default
       config:
         -
-          subnet: 192.167.10.0/16
+          subnet: 192.167.0.0/16
